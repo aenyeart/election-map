@@ -4,12 +4,12 @@ let newPolitician = function(newName, partyColor) {
     color: partyColor,
     electionResults: null,
     totalVotes: 0,
-    tallyUpTotalVotes() {
+    tallyUpTotalVotes: function() {
       this.totalVotes = 0;
-      for (i=0; i<this.electionResults.length; i++) {
+      for (i = 0; i < this.electionResults.length; i++) {
         this.totalVotes += this.electionResults[i];
       }
-      console.log(this.name + " " + this.totalVotes);
+    console.log(this.name + " " + this.totalVotes);
     }
   };
   return politician;
