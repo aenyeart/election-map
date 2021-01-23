@@ -362,13 +362,14 @@ var inittheStates = function () {
   var i = -1;
 
   theStates.push(new State("AL", "ALABAMA", "Alabama", ++i));
-  g_StateMap["AL"] = theStates[i];
+  g_StateMap["AL"] = theStates[i]; // Regarding what seems like indexing with a string is actually adding a property to the g_StateMap object:  https://stackoverflow.com/questions/56325433/why-javascript-array-accepts-string-value-index AND/OR https://stackoverflow.com/questions/874205/why-can-i-add-named-properties-to-an-array-as-if-it-were-an-object
   theStates[i].polys.push(new poly());
   theStates[i].polys[0].ptX = [537, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 545, 544, 543, 544, 545, 511, 511, 512, 514, 514, 513, 513, 512, 511, 506, 507, 508, 509, 508, 507, 506, 505, 504, 503, 501, 501, 500, 501, 502, 503, 504, 505, 504, 514];
   theStates[i].polys[0].ptY = [240, 238, 233, 228, 222, 217, 211, 208, 206, 202, 201, 200, 197, 194, 186, 184, 184, 181, 180, 180, 178, 177, 176, 175, 174, 173, 173, 174, 175, 175, 179, 179, 175, 174, 175, 175, 183, 202, 211, 220, 228, 237, 239, 240, 240];
   theStates[i].polys.push(new poly());
   theStates[i].polys[1].ptX = [503, 505, 504];
   theStates[i].polys[1].ptY = [173, 174, 173];
+
   theStates.push(new State("AK", "ALASKA", "Alaska", ++i));
   g_StateMap["AK"] = theStates[i];
   theStates[i].polys.push(new poly());
