@@ -6,4 +6,3 @@ dist
 .cache
 .DS_Store
 Thumbs.db
-etc.js
